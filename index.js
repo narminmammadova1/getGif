@@ -15,10 +15,6 @@ async function searchGifs() {
       method: "GET",
     });
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
     const data = await response.json();
     gifContainer.innerHTML = "";
 
