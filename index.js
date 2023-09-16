@@ -60,6 +60,9 @@ function showLoadingIndicator() {
 function hideLoadingIndicator() {
   loadingIndicator.style.display = "none";
 }
-
-// getData();
+searchInput.addEventListener("keydown", function (e) {
+    if (e.key == "Enter") {
+      searchGifs();
+    }
+  });
 searchGifs()
