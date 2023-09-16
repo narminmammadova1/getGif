@@ -3,17 +3,6 @@ const gifContainer = document.getElementById("gifContainer");
 const apiKey = "IUyqcq9JfnOFV5W1uI0plzV0jEf9IHPQ";
 const url = `https://api.giphy.com/v1/stickers/trending?api_key=${apiKey}`;
 const searchButton = document.getElementById("searchButton");
-// async function getData() {
-//   try {
-//     const response = await fetch(url, {
-//       method: "GET",
-//     });
-//     const data = await response.json();
-//     return data;
-//   } catch (error) {
-//     console.log("error", error);
-//   }
-// }
 
 async function searchGifs() {
   try {
